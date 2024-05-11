@@ -1,0 +1,11 @@
+services:
+  psalsace.module:
+    class: Psalsace
+    public: true
+    factory: ["Module", "getInstanceByName"]
+    arguments:
+      - "psalsace"
+
+  PrestaShop\Module\PsAlsace\Service\PsAlsaceService:
+    class: PrestaShop\Module\PsAlsace\Service\PsAlsaceService
+    public: true
